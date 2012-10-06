@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en">
+<head>
+    <title>AutoSlider</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style/style.css" />
+    <meta name="keywords" content="jquery, autoSlider, auto, automatic, image, slider, plugin, mudit, ameta, mudit ameta, programming" />
+    <meta name="description" content="Auto Slider, a simple jquery automatic image sliding plugin" />
+    <meta name="author" content="Mudit Ameta" />
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33864787-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+	<header>
+		<h1>autoSlider.js</h1>
+		<h4>a simple auto image slider.</h4>
+	</header>
+	<section>
+		<p class="dropcap">
+		This is a simple auto image slider jQuery plugin. <br />
+		It supports two simple animation styles as of now which are <span class="border1px">Ping Pong</span>
+		& <span class="border1px">Scroll From First</span>. <br />
+		<br />
+		Usage:
+		<br /> <br />
+		</p>
+		<div class="code border1px_broad" style="overflow:auto">
+			<div class="breatheRight left">
+			Markup: <br /> <br />
+			&lt;div id="carousel"&gt; <br />
+				&nbsp;&nbsp;&lt;div id="slides"&gt; <br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;1&lt;/div&gt;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;2&lt;/div&gt;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;3&lt;/div&gt;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;4&lt;/div&gt;<br />
+				&nbsp;&nbsp;&lt;/div&gt;	<br />
+			&lt;/div&gt;<br /><br />
+			</div>
+			
+			<div class="breatheRight left">
+			Javascript: <br /> <br />
+				$('#carousel').autoSlider({<br />
+				&nbsp;&nbsp;slidesContainerId: 'slides',<br />
+				&nbsp;&nbsp;animation: 'pingPong',<br />
+				&nbsp;&nbsp;interval: 2000<br />
+				});<br /><br />
+			</div>
+			
+			<div class="left">
+			CSS: <br /> <br />
+				#carousel > #slides > div {<br />
+				&nbsp;&nbsp;height: pixels_here,<br />
+				&nbsp;&nbsp;width: pixels_here<br />
+				}<br /><br />
+			</div>
+		</div>
+		<div id="download">
+			<br />
+			<a class="button left" href="script/autoSlider.js" target="_blank">Download</a>
+			<a class="button left breatheLeft" href="script/autoSlider_mini.js" target="_blank">Minified</a>
+			<a class="button breatheLeft left" href="demo.html" target="_blank">Demo</a>
+		</div>
+		<div id="contact" class="clear">
+			<p><br />Contact:
+				<br /> <br />
+				<a href="mailto:i@muditameta.com" class="mail left">i@muditameta.com</a>
+				<a href="http://www.twitter.com/muditameta" target="_blank" class="button left breatheLeft">Twitter</a>
+			</p>
+		</div>
+	</section>
+</body>
+</html>
